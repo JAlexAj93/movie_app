@@ -49,7 +49,7 @@ flutter pub get
 ```bash
 bash build_ios.sh
 ```
-### 5. Add your API key into config.json file
+### 5. Add your Bearer Token into config.json file
 ```json
 {
   "BEARER_TOKEN": "put_your_bearer_token_here"
