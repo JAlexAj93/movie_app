@@ -15,7 +15,6 @@ class MovieCubit extends Cubit<List<Movie>> {
     _isLoading = true;
 
     try {
-      print("Loading movies page $page...");
       final movies = await fetchPopularMovies.execute(page, language);
       if (page == 1) {
         // Si es la primera página, reiniciamos la lista
@@ -25,10 +24,7 @@ class MovieCubit extends Cubit<List<Movie>> {
         emit(List.from(state)..addAll(movies));
       }
       _currentPage = page; // Actualizamos la página actual
-      print("Movies loaded: ${movies.length}");
     } catch (e) {
-      print("Error: $e");
-      // Si ocurre un error, emitimos la lista actual
       emit(state);
     } finally {
       _isLoading = false; // Rehabilitamos la carga

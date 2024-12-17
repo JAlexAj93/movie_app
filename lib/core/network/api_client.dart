@@ -29,6 +29,7 @@ class ApiClient {
   // Verifica si hay conexión a Internet
   Future<bool> get isConnected async {
     var connectivityResult = await (Connectivity().checkConnectivity());
+    // ignore: unrelated_type_equality_checks
     return connectivityResult != ConnectivityResult.none;
   }
 }

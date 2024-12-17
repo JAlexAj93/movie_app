@@ -10,7 +10,7 @@ class MovieOverview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       movie.overview,
-      style: TextStyle(fontSize: 16),
+      style: const TextStyle(fontSize: 16),
       textAlign: TextAlign.justify,
     );
   }

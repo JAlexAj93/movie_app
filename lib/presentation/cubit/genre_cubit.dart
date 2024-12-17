@@ -13,14 +13,12 @@ class GenreCubit extends Cubit<GenreState> {
   GenreCubit(this.fetchGenres) : super(GenreState(genres: []));
 
   Future<void> loadGenres(String language) async {
+    //Actualiza los generos
     try {
       final genres = await fetchGenres.execute(language);
-      print(
-          "Genres loaded: $genres"); // Verifica que los géneros se carguen correctamente
       emit(GenreState(genres: genres));
     } catch (e) {
-      print("Error loading genres: $e");
-      emit(GenreState(genres: [])); // Maneja el error si es necesario
+      emit(GenreState(genres: []));
     }
   }
 }

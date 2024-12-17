@@ -14,6 +14,7 @@ class MovieListScreen extends StatefulWidget {
   const MovieListScreen({super.key, required this.language});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MovieListScreenState createState() => _MovieListScreenState();
 }
 

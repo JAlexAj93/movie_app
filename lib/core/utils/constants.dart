@@ -11,6 +11,5 @@ class Constants {
     String language,
   ) =>
       '/3/genre/movie/list?language=$language';
-  static String token() =>
-      'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMDgxMWQ3N2M0NTg1Yzk1MDRhNjA2ZjdlMWMyMmY0YiIsIm5iZiI6MTczNDEzMzAyMi4zMjE5OTk4LCJzdWIiOiI2NzVjYzUxZTQ2NWFiNWIzZjZiMDFhMTYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.SbcfoRdaRZh1OK0JQZWw8atnczEGaYUQgKF_UxoC-BU';
+  static String token() => const String.fromEnvironment("BEARER_TOKEN");
 }
