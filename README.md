@@ -2,6 +2,29 @@
 
 A new flutter project that shows us the list of most popular movies and the details of the movie (Name, Description, Genre, Poster and Release Date).
 
+## Architecture
+In this project we use Clean Architecture with the following structure:
+
+lib/
+  - Core/
+      - errors/
+      - network/
+      - utils/
+  - data/
+      - datasources/
+      - models/
+      - repositories/
+  - domain/
+      - entities/
+      - repositories/
+      - usecases/
+  - presentation/
+      - cubit/
+      - screens/
+      - widgets/
+    
+This architecture follows the Clean Architecture pattern, which focuses on separating application responsibilities into different layers to make the code more maintainable, scalable, and easy to test. The goal is to isolate business logic from infrastructure (e.g. APIs, databases, etc.) and presentation.
+
 ## Features
 
 This project has the following features:
