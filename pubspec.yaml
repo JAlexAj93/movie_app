@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.6
-  http: ^1.2.1
-  connectivity_plus: ^6.1.0
+  flutter_bloc: ^8.1.6        #Gestion del estado con cubit y bloc
+  http: ^1.2.1                #Servicio para peticiones http
+  connectivity_plus: ^6.1.0   #Servicio para detectar el estado de la conectividad del dispositivo
 
 dev_dependencies:
   flutter_test:
