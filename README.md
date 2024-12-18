@@ -55,11 +55,11 @@ bash build_ios.sh
   "BEARER_TOKEN": "put_your_bearer_token_here"
 }
 ```
-### 4. Run the app
+### 6. Run the app
 ```bash 
 flutter run --dart-define-from-file config.json
 ```
-### 5. Run on Visual Studio
+### 7. Run on Visual Studio
 If you want to use Visual Studio to launch the application, configure your launch.json file and add the arguments as in the following example:
 ```json
 {
