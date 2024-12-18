@@ -45,21 +45,21 @@ cd movie_app
 ```bash
 flutter pub get
 ```
-### 4. Or run the script 'build_ios.sh' if you want to run in iOS Device
+### 3. Or run the script 'build_ios.sh' if you want to run in iOS Device
 ```bash
 bash build_ios.sh
 ```
-### 5. Add your Bearer Token into config.json file
+### 4. Add your Bearer Token into config.json file
 ```json
 {
   "BEARER_TOKEN": "put_your_bearer_token_here"
 }
 ```
-### 6. Run the app
+### 5. Run the app
 ```bash 
 flutter run --dart-define-from-file config.json
 ```
-### 7. Run on Visual Studio
+### 6. Run on Visual Studio
 If you want to use Visual Studio to launch the application, configure your launch.json file and add the arguments as in the following example:
 ```json
 {
